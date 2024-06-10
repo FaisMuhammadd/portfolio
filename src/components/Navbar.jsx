@@ -1,18 +1,20 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import logo from "../assets/kevinRushLogo.png";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="logo" />
-      </div>
+      <div className="flex flex-shrink-0 items-center"></div>
 
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
-        <FaFacebook />
+        <a href="https://github.com/FaisMuhammadd">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-fais-855335188/">
+          <FaLinkedin />
+        </a>
+        <a href="https://www.instagram.com/pandawaa_25/?hl=en">
+          <FaInstagram />
+        </a>
       </div>
     </nav>
   );
